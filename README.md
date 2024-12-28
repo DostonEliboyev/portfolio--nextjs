@@ -1,1 +1,3 @@
 # news-nextjs
+
+nimadur arasrasdcasdca
