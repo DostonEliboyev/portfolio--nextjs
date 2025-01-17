@@ -1,0 +1,11 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Users/user/Desktop/portfolio--nextjs/src/app/%28routes%29/_components/footer.tsx"],"sourcesContent":["function Footer() {\r\n\treturn <div>footer</div>\r\n}\r\n\r\nexport default Footer\r\n"],"names":[],"mappings":";;;;;AAAA,SAAS;IACR,qBAAO,8OAAC;kBAAI;;;;;;AACb;uCAEe"}},
+    {"offset": {"line": 22, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 28, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Users/user/Desktop/portfolio--nextjs/src/app/%28routes%29/_components/navbar.tsx"],"sourcesContent":["function Navbar() {\r\n\treturn (\r\n\t\t<div>\r\n\t\t\t<h1>Navbar</h1>\r\n\t\t</div>\r\n\t)\r\n}\r\n//className='h-[10vh] backdrop-blur-sm border-b fixed inset-0 bg-background'\r\nexport default Navbar\r\n"],"names":[],"mappings":";;;;;AAAA,SAAS;IACR,qBACC,8OAAC;kBACA,cAAA,8OAAC;sBAAG;;;;;;;;;;;AAGP;uCAEe"}},
+    {"offset": {"line": 49, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 55, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Users/user/Desktop/portfolio--nextjs/src/app/%28routes%29/layout.tsx"],"sourcesContent":["import { ChildProps } from '../_types'\r\nimport Footer from './_components/footer'\r\nimport Navbar from './_components/navbar'\r\nfunction Layout({ children }: ChildProps) {\r\n\treturn (\r\n\t\t<main>\r\n\t\t\t<Navbar />\r\n\t\t\t<div className='container'>{children}</div>\r\n\t\t\t<Footer />\r\n\t\t</main>\r\n\t)\r\n}\r\n\r\nexport default Layout\r\n"],"names":[],"mappings":";;;;AACA;AACA;;;;AACA,SAAS,OAAO,EAAE,QAAQ,EAAc;IACvC,qBACC,8OAAC;;0BACA,8OAAC,kJAAA,CAAA,UAAM;;;;;0BACP,8OAAC;gBAAI,WAAU;0BAAa;;;;;;0BAC5B,8OAAC,kJAAA,CAAA,UAAM;;;;;;;;;;;AAGV;uCAEe"}},
+    {"offset": {"line": 93, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}
