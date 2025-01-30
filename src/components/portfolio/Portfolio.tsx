@@ -33,10 +33,10 @@ const items = [
 	},
 	{
 		id: 5,
-		img: '/p5.jpg',
+		img: '/animat.png',
 		title: 'Animated Portfolio Website',
-		desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure laboriosam tempore consectetur, atque maiores culpa quia, repellat id, dicta esse fugit neque voluptatem provident itaque voluptates minima. Repudiandae, provident hic.',
-		link: '/',
+		desc: '',
+		link: 'https://dostoneliboyev.uz/',
 	},
 ]
 
