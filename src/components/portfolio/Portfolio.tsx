@@ -160,7 +160,7 @@ const Portfolio = () => {
 			<section />
 			<section />
 			<section />
-			<div className='pProgress'>
+			{/* <div className='pProgress'>
 				<svg width='100%' height='100%' viewBox='0 0 160 160'>
 					<circle
 						cx='80'
@@ -181,7 +181,7 @@ const Portfolio = () => {
 						transform='rotate(-90 80 80)'
 					/>
 				</svg>
-			</div>
+			</div> */}
 		</div>
 	)
 }

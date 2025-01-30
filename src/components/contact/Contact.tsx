@@ -89,6 +89,15 @@ const Contact = () => {
 					</motion.button>
 					{success && <span>Your message has been sent!</span>}
 					{error && <span>Something went wrong!</span>}
+					<motion.div variants={listVariant} className='formItem'>
+						<label>
+							Phone: <a href='tel:+998995730652'>998995730652</a>
+						</label>
+
+						<label>
+							Telegram:<a href='https://t.me/DostonEliboyev'> DostonEliboyev</a>
+						</label>
+					</motion.div>
 				</motion.form>
 			</div>
 			<div className='cSection'>
