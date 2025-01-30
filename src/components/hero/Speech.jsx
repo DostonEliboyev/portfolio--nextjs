@@ -12,15 +12,13 @@ function Speech() {
 			<div className='bubble'>
 				<TypeAnimation
 					sequence={[
-						// Same substring at the start will only be typed out once, initially
-						'We produce food for Mice',
-						1000, // wait 1s before replacing "Mice" with "Hamsters"
-						'We produce food for Hamsters',
+						'I build complex and scalable UIs with React.',
 						1000,
-						'We produce food for Guinea Pigs',
+						'I create dynamic animations and 3D experiences with Three.js.',
 						1000,
-						'We produce food for Chinchillas',
+						'I develop interactive and high-performance web applications with JavaScript.',
 						1000,
+						'I architect efficient and modern front-end solutions.',
 					]}
 					wrapper='span'
 					speed={40}
@@ -29,7 +27,7 @@ function Speech() {
 					repeat={Infinity}
 				/>
 			</div>
-			<img src='/man.png' alt='' />
+			<img src='/hero3.png' alt='' />
 		</motion.div>
 	)
 }

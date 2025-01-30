@@ -54,8 +54,8 @@
 }
 
 .serviceInfo h3 {
+	font-weight: 400;
 	font-size: 13px;
-	font-weight: 300;
 }
 
 .service:nth-child(1) .serviceIcon {

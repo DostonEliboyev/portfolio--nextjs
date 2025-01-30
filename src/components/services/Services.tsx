@@ -2,7 +2,6 @@ import { motion, useInView } from 'motion/react'
 import { useRef, useState } from 'react'
 import ComputerModelContainer from './computer/ComputerModelContainer'
 import ConsoleModelContainer from './console/ConsoleModelContainer'
-import Counter from './Counter'
 import MugModelContainer from './mug/MugModelContainer'
 import './services.css'
 const textVariants = {
@@ -41,18 +40,23 @@ const services = [
 		id: 1,
 		img: '/service1.png',
 		title: 'Web Development',
+		description: 'Crafting modern, interactive, and scalable web experiences.',
 		counter: 35,
 	},
 	{
 		id: 2,
 		img: '/service2.png',
-		title: 'Product Design',
+		title: '3D and Animations ',
+		description:
+			'Designing immersive, dynamic, and animated 3D web experiences.',
 		counter: 23,
 	},
 	{
 		id: 3,
 		img: '/service3.png',
-		title: 'Branding',
+		title: 'Dashboard',
+		description:
+			'Building complex dashboards with modern UI and architecture solutions.',
 		counter: 46,
 	},
 ]
@@ -89,15 +93,15 @@ const Services = () => {
 							</div>
 							<div className='serviceInfo'>
 								<h2>{service.title}</h2>
-								<h3>{service.counter} Projects</h3>
+								<h3>{service.description}</h3>
 							</div>
 						</motion.div>
 					))}
 				</motion.div>
-				<div className='counterList'>
+				{/* <div className='counterList'>
 					<Counter from={0} to={104} text='Projects Completed' />
 					<Counter from={0} to={72} text='Happy Clients' />
-				</div>
+				</div> */}
 			</div>
 			<div className='sSection right'>
 				{/* <ComputerModelContainer /> */}

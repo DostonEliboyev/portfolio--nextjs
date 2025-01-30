@@ -53,14 +53,26 @@ function Hero() {
 					animate='animate'
 					className='awards'
 				>
-					<motion.h2 variants={awardVariants}>Top web Developer</motion.h2>
+					<motion.h2 variants={awardVariants}>Top Web Developer</motion.h2>
 					<motion.p variants={awardVariants}>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Skilled Software Engineer with 4 years of experience, specializing
+						in React, JavaScript, Three.js, animations, and scalable UI
+						architecture.
 					</motion.p>
 					<div className='awardsList'>
-						<motion.img variants={awardVariants} src='/award1.png' alt='' />
-						<motion.img variants={awardVariants} src='/award2.png' alt='' />
-						<motion.img variants={awardVariants} src='/award3.png' alt='' />
+						<a href='https://github.com/DostonEliboyev' target='_blank'>
+							<motion.img variants={awardVariants} src='/github2.gif' alt='' />
+						</a>
+						<a href='https://www.linkedin.com/in/doston-eliboyev-18a1a2215/'>
+							<motion.img variants={awardVariants} src='/linkedin.gif' alt='' />
+						</a>
+						<a href='https://www.instagram.com/doston_eliboyev_samarqand/'>
+							<motion.img
+								variants={awardVariants}
+								src='/instagram.gif'
+								alt=''
+							/>
+						</a>
 					</div>
 				</motion.div>
 				{/* SCROLL SVG */}
@@ -103,7 +115,7 @@ function Hero() {
 			</div>
 			<div className='hSection right'>
 				{/* FOLLOW */}
-				<motion.div
+				{/* <motion.div
 					variants={followVariants}
 					initial='initial'
 					animate='animate'
@@ -121,11 +133,11 @@ function Hero() {
 					<motion.div variants={followVariants} className='followTextContainer'>
 						<div className='followText'>FOLLOW ME</div>
 					</motion.div>
-				</motion.div>
+				</motion.div> */}
 				{/* BUBBLE */}
 				<Speech />
 				{/* CERTIFICATE */}
-				<motion.div
+				{/* <motion.div
 					className='certificate'
 					animate={{ opacity: [0, 1] }}
 					transition={{ duration: 1 }}
@@ -136,13 +148,14 @@ function Hero() {
 					PROFESSIONAL
 					<br />
 					UI DESIGNER
-				</motion.div>
+				</motion.div> */}
 				{/* CONTACT BUTTON */}
 				<motion.a
 					animate={{ x: [200, 0], opacity: [0, 1] }}
 					transition={{ duration: 2 }}
-					href='/#contact'
+					href='https://docs.google.com/document/d/1zosHnQX-C8qRpP_FoQapW5FVlyoofEpIF8yr9xPlkWE/edit?usp=sharing'
 					className='contactLink'
+					target='_blank'
 				>
 					<motion.div
 						className='contactButton'
@@ -161,7 +174,7 @@ function Hero() {
 							</text>
 							<text className='circleText'>
 								<textPath href='#innerCirclePath' startOffset='44%'>
-									Contact Me •
+									My Resume •
 								</textPath>
 							</text>
 						</svg>
@@ -189,9 +202,9 @@ function Hero() {
 						<Shape />
 					</Suspense>
 				</Canvas>
-				<div className='hImg'>
-					<img src='/hero.png' alt='' />
-				</div>
+				{/* <div className='hImg'>
+					<img src='/hero3.png' alt='' />
+				</div> */}
 			</div>
 		</div>
 	)

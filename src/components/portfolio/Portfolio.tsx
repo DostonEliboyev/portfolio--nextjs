@@ -5,31 +5,31 @@ import './portfolio.css'
 const items = [
 	{
 		id: 1,
-		img: '/p1.jpg',
-		title: 'Full Stack Blog Application',
-		desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure laboriosam tempore consectetur, atque maiores culpa quia, repellat id, dicta esse fugit neque voluptatem provident itaque voluptates minima. Repudiandae, provident hic.',
-		link: '/',
+		img: '/pro.png',
+		title: 'Pro Lighting Media Landing Page',
+		desc: 'This project is a responsive landing page built using Next.js. It is designed to provide an optimal viewing experience across devices, including phones, tablets, and desktops.',
+		link: 'https://pro-lighting-media2.vercel.app/',
 	},
 	{
 		id: 2,
-		img: '/p2.jpg',
-		title: 'School Management System',
-		desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure laboriosam tempore consectetur, atque maiores culpa quia, repellat id, dicta esse fugit neque voluptatem provident itaque voluptates minima. Repudiandae, provident hic.',
-		link: '/',
+		img: '/magazine.png',
+		title: 'Online Store ',
+		desc: 'This project is a single-page online store created using basic HTML and CSS. The project is designed to provide a simple and user-friendly interface for users.',
+		link: 'https://magazineuzb.netlify.app/',
 	},
 	{
 		id: 3,
-		img: '/p3.jpg',
-		title: 'Real-time Chat Application',
-		desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure laboriosam tempore consectetur, atque maiores culpa quia, repellat id, dicta esse fugit neque voluptatem provident itaque voluptates minima. Repudiandae, provident hic.',
-		link: '/',
+		img: '/sublime.png',
+		title: 'Online Store Sublime',
+		desc: 'This project was developed while learning web development. It served as a practical exercise to apply basic HTML and CSS skills.',
+		link: 'https://siblimeuz.netlify.app/',
 	},
 	{
 		id: 4,
-		img: '/p4.jpg',
-		title: 'Social Media Project',
-		desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure laboriosam tempore consectetur, atque maiores culpa quia, repellat id, dicta esse fugit neque voluptatem provident itaque voluptates minima. Repudiandae, provident hic.',
-		link: '/',
+		img: '/guzallika.png',
+		title: "Oddiylikdan Go'zallika",
+		desc: 'This website is a fully responsive and modern platform designed for a beauty salon, showcasing its services and offerings. Built using HTML, CSS, and JavaScript, the site is optimized for seamless performance across all devices, including mobile phones, tablets, and desktops.',
+		link: 'https://saodatgozaliksalon.netlify.app/',
 	},
 	{
 		id: 5,
@@ -96,7 +96,7 @@ const ListItem = ({ item }) => {
 			>
 				<motion.h1 variants={textVariants}>{item.title}</motion.h1>
 				<motion.p variants={textVariants}>{item.desc}</motion.p>
-				<motion.a variants={textVariants} href={item.link}>
+				<motion.a variants={textVariants} href={item.link} target='_blank'>
 					<button>View Project</button>
 				</motion.a>
 			</motion.div>
@@ -107,7 +107,7 @@ const ListItem = ({ item }) => {
 const Portfolio = () => {
 	const [containerDistance, setContainerDistance] = useState(0)
 	const ref = useRef(null)
-
+	console.log('containerDistance', containerDistance)
 	useEffect(() => {
 		if (ref.current) {
 			const rect = ref.current.getBoundingClientRect()
@@ -155,6 +155,7 @@ const Portfolio = () => {
 					<ListItem item={item} key={item.id} />
 				))}
 			</motion.div>
+			<section />
 			<section />
 			<section />
 			<section />
